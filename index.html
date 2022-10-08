@@ -16,11 +16,21 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px; 
+      text-align: center; 
+
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
+     }
     @font-face {
       font-family: Outfit;
       src: url("./Outfit-VariableFont_wght.ttf");
+    }
+    @font-face {
+      font-family: static;
+      src: url("./static/Outfit-Bold.ttf");
     }
     *{
       font-family: Outfit;
@@ -28,6 +38,7 @@
     }
     body{
       background-color: hsl(212, 45%, 89%);
+      text-align: center;
     }
     main{
       display: flex;
@@ -38,17 +49,40 @@
       padding: 20px;
       background-color:hsl(0, 0%, 100%) ;
       border-radius: 24px;
-      margin: 20px;
+      margin: 70px;
+      text-align: center;
+      width: 255px;
+      margin-bottom: 50px;
     }
     .first{
       font-family: 'Outfit', sans-serif;
       font-weight: 700;
+      font-family: static;
+      padding-top: 10px;
     }
     .second{
       font-size: 15px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      text-align: center;
     }
     img{
       border-radius: 24px;
+      width:inherit;
+    }
+    @media only screen and (max-width:415px) {
+      section{
+        padding: 12px;
+        width:100%;
+        margin: 42px;
+      }
+      section p{
+        font-size: 14px;
+      }
+      .first{
+        font-size: 17px;
+      }
+      
     }
   </style>
 </head>
@@ -60,7 +94,7 @@
       <p class="first">Improve your frontend skills by building projects</p>
       <p class="second">Scan QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </section>
-   
+
   </main>
 
   Improve your front-end skills by building projects
